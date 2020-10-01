@@ -34,7 +34,7 @@ namespace MSP
             }
             else
             {
-                DialogResult dialogResult = MessageBox.Show("Are you sure to add these Customer?", "Edit changes", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Are you sure to add these Customers?", "Edit changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
                     SqlCommand cmd = new SqlCommand("Insert into Company(COM_ID,COM_Name,COM_Address,COM_Contact,COM_O_Name) values ('" + textBox5.Text + "','" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "')", con);
